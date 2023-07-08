@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"><!--css-->
+    <!--icons font-awosome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codewith.beki</title>
+</head>
+<body>
+    <div class="container">
+        <div class="fq-container">
+            <div class="img-box">
+                <img src="img/mainImg.png" alt="">
+            </div>
+            <div class="fq-main">
+                <div class="title">
+                    FAQ
+                </div>
+                <ul class="fq-text">
+                    <li>
+                        <div class="question-arrow">
+                            <span class="question">What is SMM in dropshipping?</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </div>
+                        <p>SMM in Dropshipping It is a marketing strategy that focuses on utilizing social media platforms to promote and sell
+                            products or services.</p>
+                        <span class="line"></span>
+                    </li>
+                    <!--2 Q&A-->
+                    <li>
+                        <div class="question-arrow">
+                            <span class="question">What products can be included in an SMM dropshipping theme?</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, doloribus.</p>
+                        <span class="line"></span>
+                    </li>
+                    <!--2 Q&A-->
+                    <li>
+                        <div class="question-arrow">
+                            <span class="question">How can I promote SMM dropshipping store effectively?</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, doloribus.</p>
+                        <span class="line"></span>
+                    </li>
+                    <!--2 Q&A-->
+                    <li>
+                        <div class="question-arrow">
+                            <span class="question">Are there any specific legal considerations for an SMM dropshipping store?</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, doloribus.</p>
+                        <span class="line"></span>
+                    </li>
+                    <!--2 Q&A-->
+                    <li>
+                        <div class="question-arrow">
+                            <span class="question">How can I differentiate my SMM dropshipping store from competitors in the market?</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, doloribus.</p>
+                        <span class="line"></span>
+                    </li>
+                    <!--2 Q&A-->
+                    <li>
+                        <div class="question-arrow">
+                            <span class="question">Is it possible to integrate social media feeds?</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, doloribus.</p>
+                        <span class="line"></span>
+                    </li>
+                    <!--2 Q&A-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        let li = document.querySelectorAll(".fq-main li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+       clickedLi.classList.toggle("showAnswer");
+      });
+    }
+    </script>
+</body>
+</html>
